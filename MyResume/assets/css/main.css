@@ -266,6 +266,7 @@ h2 {
     text-align: center;
     flex-grow: 1;
     /* Make all buttons equal width */
+
 }
 
 /* Navigation links */
@@ -280,14 +281,16 @@ h2 {
     font-size: 15px;
     padding: 8px 20px;
     border-radius: 50px;
-    background: color-mix(in srgb, var(--default-color), transparent 92%);
+    background: color-mix(in srgb, var(--background-color), transparent 0%);
     height: 50px;
     transition: 0.3s;
     white-space: nowrap;
     width: 150px;
-    /* Equal width for all buttons */
     box-sizing: border-box;
     margin: 0 auto;
+    border-style: solid;
+    border-color: #055929;
+    border-width: 2px;
 }
 
 /* Icon styling */
