@@ -588,6 +588,12 @@ section,
     margin-bottom: 0;
 }
 
+@media (max-width: 1000px) {
+    .section-title {
+        padding-bottom: 10px !important;
+    }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -817,6 +823,28 @@ section,
     border-radius: 50px;
 }
 
+.tool-column {
+    border: 2px solid #055929;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.tool-title {
+    position: relative;
+    display: inline-block;
+}
+
+.tool-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 120px;
+    /* Adjust length of border line */
+    border-bottom: 1px solid #055929;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -874,6 +902,23 @@ section,
     top: 0;
     background: var(--background-color);
     border: 2px solid var(--accent-color);
+}
+
+@media (max-width: 1000px) {
+    .internship-img {
+        text-align: center !important;
+        margin-top: 20px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .internship-img img {
+        width: 100%;
+        max-width: 100px;
+        /* You can adjust this value */
+        height: auto;
+    }
 }
 
 /*--------------------------------------------------------------
