@@ -233,7 +233,7 @@ h2 {
 /* Bottom fixed nav */
 .navmenu {
     position: fixed;
-    bottom: 40px;
+    bottom: 43px;
     left: 0;
     right: 0;
     max-width: 800px;
@@ -786,6 +786,25 @@ section,
     color: color-mix(in srgb, var(--default-color), transparent 50%);
     font-size: 16px;
 }
+
+@media (max-width: 576px) {
+
+    #prevPage,
+    #nextPage {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 25px !important;
+    }
+
+    #prevPage {
+        text-align: left;
+    }
+
+    #nextPage {
+        text-align: right;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Skills Section

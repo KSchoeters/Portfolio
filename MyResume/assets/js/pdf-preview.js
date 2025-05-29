@@ -80,12 +80,9 @@ document.querySelectorAll('.open-pdf-modal').forEach(trigger => {
         pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
             pdfDoc = pdfDoc_;
             pageNum = 1;
+            renderPage(pageNum); // ✅ Ensure rendering only starts after load
         }).catch(err => {
             console.error('Error loading PDF:', err);
         });
     });
-});
-
-document.getElementById('cvModal').addEventListener('shown.bs.modal', () => {
-    renderPage(pageNum);
 });
