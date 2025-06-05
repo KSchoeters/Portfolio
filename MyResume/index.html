@@ -106,7 +106,9 @@
                     <div class="col-lg-3">
                         <div class="card text-center p-3">
                             <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle mx-auto d-block profile-img" alt="Profile picture">
-                            <a href="#" class="open-pdf-modal btn mt-5" data-bs-toggle="modal" data-bs-target="#cvModal" data-pdf="assets/docs/cv_kobe_schoeters.pdf" data-title="CV – Kobe Schoeters">View CV</a>
+                            <a href="assets/docs/cv_kobe_schoeters.pdf" class="btn mt-5" target="_blank" rel="noopener noreferrer">
+                                View CV
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -368,10 +370,19 @@
                                 </div>
                             </div>
                             <div class="mt-4 d-flex justify-content-center gap-3">
-                                <a href="#" class="open-pdf-modal btn flex-fill text-center" style="max-width: 200px;" data-bs-toggle="modal" data-bs-target="#cvModal" data-pdf="assets/docs/project_plan.pdf" data-title="Project Plan - Project Hawkeye">Project Plan</a>
-                                <a href="#" class="open-pdf-modal btn flex-fill text-center" style="max-width: 200px;" data-bs-toggle="modal" data-bs-target="#cvModal" data-pdf="assets/docs/Realisatiedocument_Kobe_Schoeters.pdf" data-title="Project Plan - Project Hawkeye">Realization</a>
-                                <a href="#" class="open-pdf-modal btn flex-fill text-center" style="max-width: 200px;" data-bs-toggle="modal" data-bs-target="#cvModal" data-pdf="assets/docs/Reflectie_Kobe_Schoeters.pdf" data-title="Project Plan - Project Hawkeye">Reflection</a>
+                                <a href="assets/docs/project_plan.pdf" class="btn flex-fill text-center" style="max-width: 200px;" target="_blank" rel="noopener noreferrer">
+                                    Project Plan
+                                </a>
+
+                                <a href="assets/docs/Realisatiedocument_Kobe_Schoeters.pdf" class="btn flex-fill text-center" style="max-width: 200px;" target="_blank" rel="noopener noreferrer">
+                                    Realization
+                                </a>
+
+                                <a href="assets/docs/Reflectie_Kobe_Schoeters.pdf" class="btn flex-fill text-center" style="max-width: 200px;" target="_blank" rel="noopener noreferrer">
+                                    Reflection
+                                </a>
                             </div>
+
 
                         </div>
 
@@ -523,38 +534,6 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="cvModal" tabindex="-1" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content bg-transparent border-0 shadow-none">
-                <div class="modal-header border-0 justify-content-center position-relative">
-                    <h5 class="modal-title text-white" id="cvModalLabel">CV – Kobe Schoeters</h5>
-                    <!-- Dynamic Download Button -->
-                    <a id="modalDownloadBtn" href="#" download class="position-absolute top-0 mt-3 d-flex align-items-center justify-content-center" style="right: 4rem; width: 2rem; height: 2rem; font-size: 1.5rem; z-index: 1060; border-radius: 0.25rem; line-height: 1;
-                              background-color: white; color: black; border: 1px solid #ccc; cursor: pointer; text-decoration: none;
-                              box-shadow: 0 1px 2px rgba(0,0,0,0.1); transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#e9ecef'" onmouseout="this.style.backgroundColor='white'">
-                        <i class="bi bi-download"></i>
-                    </a>
-                    <!-- Close Button -->
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex justify-content-center align-items-center position-relative p-0" style="height: calc(100vh - 56px); overflow: hidden;">
-
-                    <button type="button" id="prevPage" class="position-absolute top-50 translate-middle-y" style="left: 10px; z-index: 1051; width: 50px; height: 50px; font-size: 64px;
-                        padding: 0; background: transparent; border: none; color: white; cursor: pointer;">
-                        ←
-                    </button>
-
-                    <canvas id="pdf-render" style="max-width: 85vw; max-height: 90vh; width: auto; height: auto;"></canvas>
-
-                    <button type="button" id="nextPage" class="position-absolute top-50 translate-middle-y" style="right: 10px; z-index: 1051; width: 50px; height: 50px; font-size: 64px; 
-                               padding: 0; background: transparent; border: none; color: white; cursor: pointer;">
-                        →
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"></a>
 
@@ -577,4 +556,6 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/pdf-preview.js"></script>
-</body></html>
+</body>
+
+</html>
