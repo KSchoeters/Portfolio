@@ -1049,12 +1049,13 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
     background-color: var(--surface-color);
-    box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
     height: 100%;
     padding: 60px 30px;
     text-align: center;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 2px solid #055929;
 }
 
 .services .service-item .icon {
@@ -1101,12 +1102,38 @@ section,
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item.item-cyan i {
-    color: #0dcaf0;
+.icon i {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
 }
 
-.services .service-item.item-cyan:hover .icon i {
-    color: #fff;
+.icon i img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-normal {
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+.img-hover {
+    opacity: 0 !important;
+    z-index: 2 !important;
+}
+
+.services .service-item.item-cyan:hover .icon .img-normal {
+    opacity: 0 !important;
+}
+
+.services .service-item.item-cyan:hover .icon .img-hover {
+    opacity: 1 !important;
 }
 
 .services .service-item.item-cyan:hover .icon path {
@@ -1172,6 +1199,145 @@ section,
 .services .service-item.item-pink:hover .icon path {
     fill: #f3268c;
 }
+
+@media (max-width: 576px) {
+    .modal-dialog.modal-xxl {
+        max-width: 98% !important;
+        margin: 3% auto !important;
+    }
+
+    .modal-info,
+    .modal-description {
+        padding: 0.5rem !important;
+    }
+}
+
+#carouselCropWatchers .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselCropWatchers .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselCropWatchers .carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselECS .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselECS .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselECS .carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselNLP .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselNLP .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselNLP .carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselTrack .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselTrack .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselTrack .carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselRA .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselRA .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselRA .carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselBI .carousel-indicators {
+    position: relative;
+    /* Position BELOW the carousel */
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#carouselBI .carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 12px;
+    border-radius: 15%;
+    background-color: #055929;
+    opacity: 0.4;
+    margin: 0 4px;
+    border: none;
+}
+
+#carouselBI .carousel-indicators .active {
+    opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1252,6 +1418,33 @@ section,
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
+}
+
+.modal-xxl {
+    max-width: 85% !important;
+}
+
+.modal-header h2,
+.modal-info,
+.modal-description {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.images {
+    text-align: center;
+}
+
+/* Set modal height to 90vh and allow scroll inside */
+.modal-xxl .modal-content {
+    height: 95vh;
+    overflow-y: auto;
+}
+
+/* Darker modal backdrop */
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.95);
+    /* darker than default 0.5 */
 }
 
 /*--------------------------------------------------------------
