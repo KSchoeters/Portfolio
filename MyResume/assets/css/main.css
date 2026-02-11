@@ -56,7 +56,7 @@
     --surface-color: #ffffff;
 }
 
-.dark-background {
+:root[data-theme="dark"] {
     --background-color: #060606;
     --default-color: #ffffff;
     --heading-color: #ffffff;
@@ -817,7 +817,7 @@ section,
 }
 
 .skills .progress-bar-wrap {
-    background: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background: color-mix(in srgb, var(--default-color), transparent 90%);
     height: 20px;
     border-radius: 50px;
 }
