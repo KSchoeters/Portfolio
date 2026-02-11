@@ -56,7 +56,7 @@
     --surface-color: #ffffff;
 }
 
-:root[data-theme="dark"] {
+.dark-background {
     --background-color: #060606;
     --default-color: #ffffff;
     --heading-color: #ffffff;
@@ -829,6 +829,11 @@ section,
     background-color: var(--accent-color);
     border-radius: 50px;
 }
+
+.dark .skills .progress-bar {
+    background-color: #68F2A2;
+}
+
 
 .tool-column {
     border: 2px solid #055929;
