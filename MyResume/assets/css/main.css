@@ -1101,6 +1101,10 @@ section,
     }
 }
 
+.modal {
+    border-radius: 50px;
+}
+
 #carouselCropWatchers .carousel-indicators {
     position: relative;
     /* Position BELOW the carousel */
