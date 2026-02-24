@@ -431,6 +431,11 @@ h2 {
     transition: 0.3s;
 }
 
+.footer .social-links a i {
+    width: 16px;
+    height: 16px;
+}
+
 .footer .social-links a:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
     text-decoration: none;
